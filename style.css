@@ -1,12 +1,16 @@
 * {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
+
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 body {
   font-family: sans-serif;
   color: #333;
@@ -15,13 +19,20 @@ body {
   background-color: rgba(0, 132, 255, 0.808);
   position: relative;
 }
+
 li {
   list-style: none;
 }
+
 .modal_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .one {
   cursor: pointer;
   border: none;
@@ -30,20 +41,24 @@ li {
   margin: 5px;
   border-radius: 15px;
 }
+
 .hidden {
   display: none;
 }
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 70%;
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
   z-index: 10;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -51,3 +66,4 @@ li {
   width: 100%;
   height: 100%;
 }
+/*# sourceMappingURL=style.css.map */
